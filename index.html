@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <title>Aprendiendo BEM</title>
+
+</head>
+
+<body>
+    
+    <header class="tituloPrincipal" id="header">
+        <div class="primera-img">
+            <img src="./imagenes/img1.png" alt="primera-imagen">
+        </div>
+
+        <div>
+            <h2 class="header_titulo">Shelby Brothers</h2>
+            <p class="header_parrafo">Somos un gastropub moderno donde podrás disfrutar de deliciosas
+                hamburguesas artesanales, acompañadas de una selección de cervezas
+                de barril y una amplia carta de vinos. Nuestro ambiente es acogedor y
+                relajado, perfecto para disfrutar de una comida en compañía de amigos o
+                familiares.</p>
+        </div>
+    </header>
+
+    <!------------------INFORMACION--------------------->
+
+    <section class="acerca-seccion">
+        <h1>Quiénes somos</h1>
+        <div class="acerca-contenido">
+            <div class="carta">
+                <h2>Nuestra Historia</h2>
+                <p>Somos una familia con raíces en
+                    Birmingham, Inglaterra, que ha traído
+                    su amor por la buena comida y bebida
+                    a México.</p>
+            </div>
+            <div class="carta">
+                <h2>Nuestra Misión</h2>
+                <p>Ofrecer una experiencia única y
+                    memorable a nuestros clientes a
+                    través de una combinación perfecta de
+                    hamburguesas artesanales y cervezas
+                    de la más alta calidad.</p>
+            </div>
+            <div class="carta">
+                <h2>Nuestros Valores</h2>
+                <p>Pasión, calidad, autenticidad y un
+                    servicio excepcional son los pilares que
+                    nos guían en cada paso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------------------MENU----------------------->
+
+    <section class="menu-seccion">
+        <div class="cosas-menu">
+            <div class="tarjetas">
+                <h1>Nuestro Menú</h1>
+                <div class="tarjeta">
+                    <h2>Hamburguesas Gourmet</h2>
+                    <p>Elaboradas con carne fresca de la mejor calidad,
+                        condimentadas con los mejores ingredientes y
+                        servidas en un delicioso pan artesanal.</p>
+                </div>
+                <div class="tarjeta">
+                    <h2>Cervezas Artesanales</h2>
+                    <p>Una selección de cervezas de pequeños productores
+                        locales, con sabores únicos y estilos innovadores
+                        que complementan a la perfección nuestras hamburguesas.
+                    </p>
+                </div>
+                <div class="tarjeta">
+                    <h2>Combinaciones Perfectas</h2>
+                    <p>Nuestros expertos han creado pairings especiales entre
+                        nuestras hamburguesas y cervezas para realzar aún más
+                        los sabores.</p>
+                </div>
+            </div>
+            <div class="menu-img">
+                <img src="./imagenes/img2.png" alt="Menu">
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------AMBIENTE----------------------->
+    <section class="ambiente">
+        <div class="contenido-ambi">
+            <div class="texto-ambi">
+                <h1>Ambiente</h1>
+                <div class="carac">
+                    <i class="fa-solid fa-beer-mug-empty" aria-label="bar-cerveza"></i>
+                    <h3>Bar de Cervezas</h3>
+                    <p>Amplia selección de cervezas artesanales a la vista de nuestros comensales.</p>
+                </div>
+                <div class="carac">
+                    <i class="fa-solid fa-burger" aria-label="hamburguesa"></i>
+                    <h3>Cocina Abierta</h3>
+                    <p>Nuestros chefs preparan las hamburguesas en una cocina a la vista del público.</p>
+                </div>
+                <div class="carac">
+                    <i class="fa-solid fa-table" aria-label="espacios-comodos"></i>
+                    <h3>Espacios Cómodos</h3>
+                    <p>Mesas y áreas de estar diseñadas para que nuestros clientes se sientan como en casa.</p>
+                </div>
+                <div class="carac">
+                    <i class="fa-solid fa-music" aria-label="musica"></i>
+                    <h3>Música en Vivo</h3>
+                    <p>Disfruta de actuaciones de artistas locales que amenizan la velada.</p>
+                </div>
+            </div>
+            <div class="imagen-ambi">
+                <img src="./imagenes/img3.png" alt="imagen de ambiente">
+            </div>
+        </div>
+    </section>
+
+    <!-----------------UBICACION Y HORARIO-------------->
+
+    <div class="banner">
+        <div class="icono">
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+    </div>
+    <section class="ubicacion">
+        <h1>Ubicación y horarios</h1>
+        <div class="seccion-ubi">
+            <div class="linea-vertical"></div>
+            <div class="bloque-ubi">
+                <div class="number">1</div>
+                <h3>Ubicación</h3>
+                <p>Nos encontramos en el corazón de la Ciudad de México, en la colonia Condesa, una de las zonas más
+                    cosmopolitas y vibrantes de la ciudad.</p>
+            </div>
+            <div class="linea-vertical"></div>
+            <div class="bloque-ubi">
+                <div class="number">2</div>
+                <h3>Horarios</h3>
+                <p>Abrimos de martes a domingo, desde las 12:00 pm hasta las 12:00 am, para que puedas disfrutar de
+                    nosotros en cualquier momento.</p>
+            </div>
+            <div class="linea-vertical"></div>
+            <div class="bloque-ubi">
+                <div class="number">3</div>
+                <h3>Estacionamiento</h3>
+                <p>Contamos con estacionamiento privado para que nuestros clientes lleguen y se vayan con total
+                    comodidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!----------PROMOCIONES Y EVENTOS ESPECIALES----------->
+
+    <section class="promociones">
+        <div class="contenido-promo">
+            <div class="texto-promo">
+                <h1>Promociones y eventos especiales</h1>
+                <div class="carac-promo">
+                    <div class="numero" aria-label="numero-1">1</div>
+                    <div class="texto">
+                        <h3>Promociones Semanales</h3>
+                        <p>Ofrecemos descuentos y paquetes especiales a lo largo de la semana para que puedas disfrutar
+                            de nuestras delicias a un mejor precio.</p>
+                    </div>
+                </div>
+                <div class="carac-promo">
+                    <div class="numero" aria-label="numero-2">2</div>
+                    <div class="texto">
+                        <h3>Eventos Temáticos</h3>
+                        <p>Organizamos noches de música en vivo, catas de cerveza y otras actividades únicas que harán
+                            de tu visita una experiencia emocionante.</p>
+                    </div>
+                </div>
+                <div class="carac-promo">
+                    <div class="numero" aria-label="numero-3">3</div>
+                    <div class="texto">
+                        <h3>Reservaciones Grupales</h3>
+                        <p>Contamos con espacios privados y menús personalizados para recibir a grupos grandes y
+                            celebrar eventos especiales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imagen-promo">
+                <img src="./imagenes/img4.png" alt="imagen de ambiente">
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------BENEFICIONS PARA CLIENTES FRECUENTES-------------->
+    <section class="beneficios">
+        <div class="cosas-bene">
+            <div class="tarjetas-bene">
+                <h1>Beneficios para clientes frecuentes</h1>
+                <div class="tarjeta-bene">
+                    <div class="titulo-bene">
+                        <span class="numero-bene">1</span>
+                        <h3>Programa de Lealtad</h3>
+                    </div>
+                    <p>Acumula puntos con cada visita y canjéalos por descuentos, bebidas gratis y otros beneficios
+                        exclusivos.
+                    </p>
+                </div>
+                <div class="tarjeta-bene">
+                    <div class="titulo-bene">
+                        <span class="numero-bene">2</span>
+                        <h3>Promociones Especiales</h3>
+                    </div>
+                    <p>Nuestros clientes frecuentes tienen acceso a ofertas y eventos privados que no están disponibles
+                        para
+                        el público en general.</p>
+                </div>
+                <div class="tarjeta-bene">
+                    <div class="titulo-bene">
+                        <span class="numero-bene">3</span>
+                        <h3>Atención Personalizada</h3>
+                    </div>
+                    <p>Nuestro equipo conoce las preferencias de nuestros clientes habituales y les brinda un servicio
+                        excepcional en cada visita.</p>
+                </div>
+            </div>
+            <div class="beneficios-img">
+                <img src="./imagenes/img5.png" alt="Menu">
+            </div>
+        </div>
+    </section>
+
+    <!---------TERTIMONIOS DE NUESTROS COMENSALES----------->
+
+    <section class="testimonio">
+        <h1>Testinomios de nuestros comensales</h1>
+        <div class="acerca-testi">
+            <div class="carta-testi">
+                <h2>"¡Una experiencia inolvidable!"</h2>
+                <p class="autor">- María, Ciudad de México</p>
+                <p>Las hamburguesas son increíbles y la
+                    selección de cervezas artesanales es
+                    impresionante. Me sorprendió la
+                    calidad y el ambiente acogedor.</p>
+            </div>
+            <div class="carta-testi">
+                <h2>"¡Volveré una y otra vez!"</h2>
+                <p class="autor">- Juan, Querétaro</p>
+                <p>Desde que descubrí Shelby Brothers,
+                    es mi restaurante favorito. La comida
+                    es excelente y el servicio es
+                    excepcional.</p>
+            </div>
+            <div class="carta-testi">
+                <h2>"¡Un lugar único en su tipo!"</h2>
+                <p class="autor">- Ana, Guadalajara</p>
+                <p>Nunca había experimentado una
+                    combinación tan perfecta de
+                    hamburguesas y cervezas artesanales.
+                    ¡Definitivamente un must-visit!</p>
+            </div>
+        </div>
+    </section>
+
+    <!---------------PROXIMOS PASOS----------------->
+    <section class="proximos-pasos">
+        <div class="contenido-paso">
+            <h2>Próximos Pasos</h2>
+            <div class="botones-paso">
+                <a href="#" class="btn">Reserva tu mesa</a>
+                <a href="#" class="btn">Descarga nuestra app</a>
+            </div>
+            <p>¡Prepárate para una experiencia gastronómica única! Reserva tu mesa, descarga nuestra aplicación y
+                conviértete en uno de nuestros clientes frecuentes. ¡Te esperamos!</p>
+        </div>
+        <img src="./imagenes/img6.png" alt="Próximos pasos">
+    </section>
+
+    <!---------------CONTACTO Y REDES--------------->
+
+    <div class="banner-cont">
+        <div class="icono">
+            <img src="./imagenes/img7.png" alt="banner-cont">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h2>Contacto y Redes</h2>
+        <div class="footer-content">
+            <!-- Contacto -->
+            <div class="contact">
+                <h3>Contacto</h3>
+                <p><strong>Teléfono:</strong> +52 (55) 1234 5678</p>
+                <p><strong>Correo:</strong> info@shelbybrothers.mx</p>
+            </div>
+            <!-- Redes Sociales -->
+            <div class="social-media">
+                <h3>Redes Sociales</h3>
+                <a href="https://www.facebook.com/shelbybrothers" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/shelbybrothers" target="_blank">Instagram</a>
+            </div>
+            <!-- Ubicación -->
+            <div class="location">
+                <h3>Ubicación</h3>
+                <p>Av. Insurgentes Sur 123, Colonia Condesa, Ciudad de México</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

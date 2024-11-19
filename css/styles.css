@@ -1,0 +1,951 @@
+:root {
+    --fuente_principal: "Montserrat", sans-serif; /*  "Baskervville", serif  */
+    --fuente_secundaria: "Exec Corners", serif;
+    --textoNegrita: 900;
+    --textoNormal: 400;
+    --textoThin: 100;
+
+    --colorPrincipal: #49495a;
+    --colorTitulo: #403ccf;
+
+    --bgPrincipal: #fbfaff;
+    --bgSecundario: #eae8f3;
+    --bgBannerPrincipal: #ede0ea;
+    --bgBannerSecundario: #ebdcf5;
+    --bgBtnPrincipal: #2623b1;
+
+}
+
+body {
+    padding: 5px;
+    font-family: "Baskervville", serif;
+}
+
+.tituloPrincipal {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.primera-img img{
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/**bloque header**/
+
+.header_titulo {
+    font-family: var(--fuente_principal);
+    font-size: 34px;
+    color: var(--colorTitulo);
+}
+
+.header_parrafo {
+    font-family: var(--fuente_secundaria);
+    color: var(--colorPrincipal);
+    max-width: 90%;
+    padding: 5px;
+}
+
+/*acerca-seccion*/
+
+.acerca-seccion {
+    padding: 34px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.acerca-seccion h1 {
+    font-family: var(--fuente_principal);
+    font-size: 34px;
+    color: #403ccf;
+    margin-bottom: 10px;
+}
+
+.acerca-contenido {
+    display: flex;
+    gap: 1rem;
+}
+
+.carta {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.carta h2 {
+    font-size: 1.25rem;
+    color: #403ccf;
+    margin-bottom: 0.5rem;
+}
+
+.carta p {
+    color: var(--colorPrincipal);
+    font-family: var(--fuente_secundaria);
+    line-height: 1.6;
+}
+
+/*menu*/
+
+.menu-seccion {
+    text-align:left;
+    padding: 2rem;
+}
+
+.menu-seccion h1 {
+    font-family: var(--fuente_principal);
+    color: var(--colorTitulo);
+}
+
+.cosas-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
+    width: 60%;
+    align-items: start;
+}
+
+.tarjetas h1{
+    font-family: var(--fuente_principal);
+    color: var(--colorTitulo);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    grid-column: span 2;
+    text-align: left;
+}
+
+.tarjeta {
+    background-color: var(--bgSecundario);
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.tarjeta h2 {
+    color: var(--colorTitulo);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+    font-family: var(--fuente_secundaria);
+    color: var(--colorPrincipal);
+    font-size: 1rem;
+}
+
+.tarjeta:nth-child(2) {
+    grid-column: 1; 
+}
+
+.tarjeta:nth-child(3) {
+    grid-column: 2;
+}
+
+.tarjeta:nth-child(4) {
+    grid-column: span 2;
+}
+
+.menu-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-img img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/*ambiente*/
+
+.ambiente {
+    text-align:left;
+    padding: 2rem;
+    margin-bottom: 30px;
+}
+
+.ambiente h1 {
+    color: var(--colorTitulo);
+}
+
+.contenido-ambi {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-ambi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
+    width: 60%;
+    align-items: start;
+}
+
+.texto-ambi h1{
+    font-family: var(--fuente_principal);
+    color: var(--colorTitulo);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    grid-column: span 2;
+    text-align: left;
+}
+
+.carac {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.carac i {
+    font-size: 35px; /* Tamaño del ícono */
+    color: var(--bgBtnPrincipal)
+}
+
+.carac p {
+    color: var(--colorPrincipal);
+    font-size: 1rem;
+}
+
+.tarjeta:nth-child(2) {
+    grid-column: 1; 
+}
+
+.tarjeta:nth-child(3) {
+    grid-column: 2;
+}
+
+.tarjeta:nth-child(4) {
+    grid-column: span 2;
+}
+
+.imagen-ambi {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-ambi img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/*ubiacion y horario*/
+
+.banner {
+    width: 100%;
+    height: 150px;
+    background-color: var(--bgBannerPrincipal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.icono i {
+    color: #6e4393;
+    font-size: 80px;
+    display: inline-block;
+}
+
+.ubicacion {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.ubicacion h1 {
+    font-family: var(--fuente_principal);
+    color:var(--colorTitulo);
+    margin-bottom: 20px;
+}
+
+.seccion-ubi {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bloque-ubi {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.bloque-ubi h3 {
+    color: var(--colorPrincipal);
+}
+
+.bloque-ubi p {
+    color: var(--colorPrincipal);
+}
+
+.number {
+    background-color: var(--bgSecundario);
+    color: var(--colorPrincipal);
+    font-size: 25px;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.seccion-ubi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea los cuadros y las lineas verticalmente */
+    position: relative;
+    gap: 20px;
+}
+
+.seccion-ubi::before {
+    /* Linea horizontal */
+    content: '';
+    position: absolute;
+    background-color: var(--bgSecundario);; /* Color de la linea */
+    top: 16%; /* Centra la linea horizontal */
+    left: 0;
+    right: 0;
+    height: 2.5px; /* Grosor de la linea */
+    z-index: 0; /* Grosor de la linea */
+}
+
+.bloque-ubi::before {
+    /* linea vertical */
+    content: '';
+    position: absolute;
+    background-color: var(--bgSecundario);; /* Color de la linea */
+    width: 2.5px; /* Grosor de la linea */
+    height: 30%; /* Altura de la linea */
+    top: 0;
+    z-index: 0; /*Lineas detras del contenido */
+}
+
+/* Diseño del cuadro */
+.bloque-ubi {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    position: relative; /*Las lineas se alineen dentro del cuadro*/
+    z-index: 1;
+}
+
+.number {
+    background-color: var(--bgSecundario);
+    color: var(--colorPrincipal);
+    font-size: 25px;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2; /* Encima de todo */
+    position: relative; /* Asegura que el z-index funcione */
+}
+
+/*promociones y eventos especiales*/
+
+.promociones {
+    text-align: left;
+    padding: 2rem;
+    margin-bottom: 30px;
+}
+
+.promociones h1 {
+    font-family: var(--fuente_principal);
+    color: var(--colorTitulo);
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+.contenido-promo {
+    color: var(--colorPrincipal);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-promo {
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    width: 60%;
+}
+
+.carac-promo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+   
+}
+
+.numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 120px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: var(--bgSecundario); /* Cambia este color si es necesario */
+    clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    margin: 0;
+}
+
+.texto {
+    text-align: left;
+}
+
+.texto p {
+    color: var(--colorPrincipal);
+    font-size: 1rem;
+}
+
+.imagen-promo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-promo img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/*beneficios para clientes frecuentes*/
+
+.beneficios {
+    color: var(--colorPrincipal);
+    text-align: left;
+    padding: 2rem;
+    margin-bottom: 20px;
+}
+
+.beneficios h1 {
+    font-family: var(--fuente_principal);
+    color: var(--colorTitulo);
+}
+
+.cosas-bene {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjetas-bene {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 60%;
+    align-items: start;
+}
+
+.tarjetas-bene h1 {
+    color: var(--colorTitulo);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    grid-column: span 2;
+    text-align: left;
+}
+
+.tarjeta-bene span {
+    font-size: 30px;
+}
+
+.tarjeta-bene {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.tarjeta-bene:nth-child(2) {
+    grid-column: 1; 
+}
+.tarjeta-bene:nth-child(3) {
+    grid-column: 2; 
+}
+
+.tarjeta-bene:nth-child(4) {
+    grid-column: span 2; 
+}
+
+.numero-bene {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bgSecundario); /* Gris */
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px; /* Centra el número verticalmente */
+    margin-right: 10px; /* Espacio entre el número y el texto */
+}
+
+.titulo-bene {
+    display: flex;
+    align-items: center;
+}
+
+.beneficios-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.beneficios-img img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/*testimonios*/
+
+.testimonio {
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.testimonio h1 {
+    font-family: var(--fuente_principal);
+    font-size: 34px;
+    color: var(--colorTitulo);
+    margin-bottom: 10px;
+}
+
+.acerca-testi {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.carta-testi {
+    padding: 1rem;
+    border-radius: 8px;
+    width: 32%;
+    margin: 0;
+}
+
+.carta-testi h2 {
+    font-size: 1.25rem;
+    color: var(--colorTitulo);
+    margin-bottom: 0.5rem;
+}
+
+.carta-testi p {
+    color: var(--colorPrincipal);
+    line-height: 1.6;
+}
+
+.carta-testi .autor {
+    color: var(--colorPrincipal);
+}
+
+/*proximos pasos*/
+
+.proximos-pasos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    margin-bottom: 80px;
+    
+}
+
+.proximos-pasos .contenido-paso {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contenido-paso h2 {
+    font-family: var(--fuente_principal);
+    font-size: 30px;
+    color: var(--colorTitulo);
+}
+
+.contenido-paso p {
+    color: var(--colorPrincipal);
+}
+
+.proximos-pasos img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Botones */
+.botones-paso {
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #2b27b8, #5955eb);
+    padding: 10px 20px;
+    border-radius: 2px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-3px); /*efecto de elevacion*/
+    box-shadow: 0 6px 12px rgba(180, 100, 255, 0.378);
+}
+
+p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/*bloque footer*/
+
+.banner-cont {
+    width: 100%;
+    height: 190px;
+    background-color: var(--bgBannerSecundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px; /* Espacio entre la imagen y el contenido */
+}
+
+.icono img {
+    max-width: 100%;
+}
+
+footer {
+    width: 76%;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-family: var(--fuente_principal);
+    font-size: 30px;
+    color: var(--colorTitulo);
+}
+
+.footer-content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.footer-content > div {
+    background-color: var(--bgSecundario);
+    padding: 7px 15px; /* Ajuste para reducir espacio interno */
+    flex: 1;
+    margin: 9px 10px; /* Espaciado entre los cuadros */
+    text-align: left;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+    color: var(--colorPrincipal);
+}
+
+.footer-content p, .footer-content a {
+    font-family: var(--fuente_secundaria);
+    margin: 10px 0;
+    color: var(--colorPrincipal);
+}
+
+.social-media a {
+    display: block;
+    text-decoration: underline;
+    color: var(--bgBtnPrincipal);
+}
+
+/*estoy cansado jefe*/
+
+/*responsivo*/
+
+/*telefono*/
+
+@media (max-width: 768px) {
+
+    /* Título Principal */
+    .tituloPrincipal {
+        flex-direction: column; /* Apilar los elementos */
+        align-items: center;
+    }
+
+    /* Header */
+    .header_titulo {
+        font-size: 28px; /* Reducir tamaño del título */
+    }
+
+    .header_parrafo {
+        font-size: 14px; /* Reducir tamaño del párrafo */
+        padding: 10px;
+    }
+
+    /* Acerca de Sección */
+    .acerca-seccion {
+        padding: 20px;
+    }
+
+    .acerca-contenido {
+        flex-direction: column;
+    }
+
+    .carta {
+        width: 100%; /* Las cartas ocupan todo el ancho */
+        margin-bottom: 20px;
+    }
+
+    .acerca-contenido {
+        gap: 10px; /* Reducir espacio entre las cartas */
+    }
+
+    /* Menu */
+    .cosas-menu {
+        flex-direction: column; /* Apilar los elementos */
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr; /* Las tarjetas se apilan en una sola columna */
+    }
+
+    .tarjetas h1 {
+        font-size: 1.8rem; /* Reducir tamaño de título */
+    }
+
+    .menu-img {
+        width: 100%; /* Las imágenes ocupan todo el ancho */
+    }
+
+    /* Ambiente */
+    .contenido-ambi {
+        align-items: center;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .texto-ambi {
+        grid-template-columns: 1fr; /* Texto en una sola columna */
+    }
+
+    .imagen-ambi {
+        width: 100%; /* Imagen ocupa todo el ancho */
+    }
+
+    /* Ubicación y Horarios */
+    .seccion-ubi, .seccion-ubi::before {
+        flex-direction: column; 
+        content: none;
+    }
+
+    .bloque-ubi {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .number {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    /* Promociones */
+    .contenido-promo {
+        align-items: center;
+        flex-direction: column; /* Apilar elementos */
+    }
+
+    .tarjetas-bene {
+        align-items: center;
+        grid-template-columns: 1fr; /* Apilar tarjetas */
+    }
+
+    .beneficios-img {
+        width: 100%; /* Imagen ocupa todo el ancho */
+    }
+
+    /* Testimonios */
+
+    .testimonio{
+        text-align: center;
+    }
+
+    .acerca-testi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carta-testi {
+        text-align: center;
+        width: 100%; 
+    }
+
+    /* Proximos Pasos */
+    .proximos-pasos {
+        align-items: center;
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    .proximos-pasos img {
+        width: 100%;
+    }
+
+    .botones-paso{
+        text-align: center;
+    }
+
+    .contenido-paso {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .btn {
+        font-size: 14px; 
+        padding: 8px 15px;
+    }
+
+    .footer-content {
+        flex-direction: column; 
+    }
+
+    .footer-content > div {
+        margin-bottom: 15px;
+    }
+
+    .footer-content p,
+    .footer-content a {
+        font-size: 14px; 
+    }
+}
+
+/*tabletas */
+@media (max-width: 1024px) {
+
+    /* General */
+    .tituloPrincipal {
+        max-width: 90%;
+    }
+
+    .acerca-seccion {
+        padding: 30px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr 1fr; /* Dos columnas */
+    }
+
+    .tarjetas h1 {
+        font-size: 2rem;
+    }
+
+    .menu-img img {
+        width: 100%;
+    }
+
+    /* Testimonios */
+    .acerca-testi {
+        flex-wrap: wrap; /* Permitir que los testimonios se acomoden */
+    }
+
+    .carta-testi {
+        width: 48%; /* Las cartas ocupan menos espacio */
+    }
+
+    .proximos-pasos {
+        width: 80%;
+    }
+
+    .proximos-pasos img {
+        width: 50%; 
+    }
+
+    .footer-content {
+        gap: 15px;
+    }
+}
+
+/*pantalla grande*/
+@media (min-width: 1200px) {
+
+    .tituloPrincipal {
+        max-width: 80%;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    .tarjetas h1 {
+        font-size: 2.5rem;
+    }
+
+    .tarjeta, .tarjeta-bene {
+        width: 100%; 
+    }
+
+    .tarjetas-bene {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+
+    .proximos-pasos {
+        width: 60%;
+    }
+
+    .proximos-pasos img {
+        width: 40%; 
+    }
+
+    .footer-content {
+        gap: 20px;
+    }
+
+    .footer-content > div {
+        padding: 10px 20px; 
+    }
+}
+
+
